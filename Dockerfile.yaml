@@ -1,0 +1,4 @@
+FROM devopsedu/webapp
+CMD appachectl -D FOREGROUND
+RUN rm var/www/htmal/index.html
+ADD proj var/www/html
